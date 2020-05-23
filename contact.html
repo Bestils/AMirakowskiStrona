@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Podstawy budowania systemów rozproszonych</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+  <script src="js/validator.js"></script>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1>Podstawy budowania systemów rozproszonych</h1>
+          <h2>Proste rozwiązania trudnych problemów.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="przyklady.html">Przykłady</a></li>
+          <li><a href="page.html">Blog Posty</a></li>
+          <li><a href="grafiki.html">Grafiki i Schematy</a></li>
+          <li><a href="contact.html">Skontaktuj się z nami</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+   
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Kontakt z nami</h1>
+        <p>Jeżeli potrzebujesz wiecej informacji:</p>
+        <form action="#" method="post"  name="witamy" onsubmit="return check()">
+          <div class="form_settings">
+            <p><span>Imie</span><input class="contact" type="text" name="name" value="" /></p>
+            <p><span>Nazwisko</span><input class="contact" type="text" name="surname" value="" /></p>
+            <p><span>Email</span>  <input type="email" id="mail" name="mail"></p>
+            <p><span>Miasto</span><input class="contact" type="text" name="city" value="" /></p>
+            <p><span>Kod pocztowy</span><input class="contact" type="text" name="zipcode" value="" /></p>
+            <p><span>Ulica wraz z numerem domu/mieszkania
+              <br>
+            </span><input class="contact" type="text" name="address" value="" /></p>
+            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="submit" /></p>
+          </div>
+        </form>
+ 
+      </div>
+    </div>
+      <div id="footer">
+      Copyright &copy;Patryk Kirszenstein 
+    </div>
+  </div>
+</body>
+</html>

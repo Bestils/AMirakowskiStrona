@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Podstawy budowania systemów rozproszonych</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1>Podstawy budowania systemów rozproszonych</h1>
+          <h2>Proste rozwiązania trudnych problemów.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="przyklady.html">Przykłady</a></li>
+          <li><a href="page.html">Blog Posty</a></li>
+          <li><a href="grafiki.html">Grafiki i Schematy</a></li>
+          <li><a href="contact.html">Skontaktuj się z nami</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <br>
+        wykonał
+        <h1> Patryk Kirszensten</h1>
+      </div>
+      <div id="content">
+        <h2><span id="Historia" class="mw-headline">Historia</span><span class="mw-editsection"><span class="mw-editsection-bracket"></span></h2>
+        <p>W p&oacute;źnych latach 70. i na początku lat 80. systemy rozproszone składały się ze zdalnych&nbsp;<a title="Terminal komputerowy" href="https://pl.wikipedia.org/wiki/Terminal_komputerowy">terminali</a>&nbsp;lub&nbsp;<a title="Minikomputer" href="https://pl.wikipedia.org/wiki/Minikomputer">minikomputer&oacute;w</a>, kt&oacute;re przeprowadzały niekt&oacute;re operacje i co pewien czas komunikowały się w&nbsp;<a title="Tryb wsadowy" href="https://pl.wikipedia.org/wiki/Tryb_wsadowy">trybie wsadowym</a>&nbsp;(ang.&nbsp;<em>batch mode</em>) z komputerem centralnym. Możliwe były połączenia terminali z komputerem centralnym w&nbsp;<a title="Topologia sieci komputerowej" href="https://pl.wikipedia.org/wiki/Topologia_sieci_komputerowej">topologii</a>&nbsp;<em>gwiazdy</em>&nbsp;(wiele terminali połączonych przez modemy z jednym centralnym komputerem),&nbsp;<em>pierścienia</em>&nbsp;(terminale, minikomputer i komputer centralny tworzą pierścień) lub&nbsp;<em>hierarchicznej</em>&nbsp;(komputer centralny połączony jest z minikomputerami, do kt&oacute;rych połączone są terminale). W drugiej połowie lat 80. system rozproszony zaczął być rozumiany jako osobne, geograficznie rozproszone aplikacje wsp&oacute;łdziałające ze sobą. W tym czasie pod pojęciem systemu rozproszonego rozumiano także pojedynczą&nbsp;<a class="mw-redirect" title="Aplikacja (informatyka)" href="https://pl.wikipedia.org/wiki/Aplikacja_(informatyka)">aplikację</a>&nbsp;składającą się ze względnie samodzielnych i niezależnych&nbsp;<a title="Oprogramowanie" href="https://pl.wikipedia.org/wiki/Oprogramowanie">program&oacute;w</a>&nbsp;wsp&oacute;łdziałających ze sobą. Dominowały w&oacute;wczas następujące konfiguracje połączeń:</p>
+        <ul>
+        <li>komputery osobiste (<a title="Komputer osobisty" href="https://pl.wikipedia.org/wiki/Komputer_osobisty">PC</a>) podłączone do komputera centralnego,</li>
+        <li>hierarchiczne (komputery podłączone do komputer&oacute;w pośredniczących, kt&oacute;re były połączone z komputerem centralnym, przy czym komputery znajdujące się bliżej komputera centralnego miały większą moc obliczeniową)</li>
+        <li>komputery r&oacute;żnej mocy obliczeniowej połączone siecią komputerową (połączenia typu r&oacute;wny, ang.&nbsp;<em>peer</em>),</li>
+        <li>hybrydowe (hierarchiczne z konfiguracją typu&nbsp;<em>peer</em>).</li>
+        </ul>
+        <p>Wsp&oacute;łczesne systemy rozproszone składają się z r&oacute;żnych komputer&oacute;w połączonych siecią komputerową.</p>
+        <h2><span id="Cechy" class="mw-headline">Cechy<span class="mw-editsection"><span class="mw-editsection-bracket"></span></h2>
+        <p>System rozproszony posiada następujące cechy:</p>
+        <ol>
+        <li><strong>Dzielenie zasob&oacute;w</strong>&nbsp;(ang.&nbsp;<em>resource sharing</em>) &ndash; wielu użytkownik&oacute;w systemu może korzystać z danego zasobu (np.&nbsp;<a title="Drukarka" href="https://pl.wikipedia.org/wiki/Drukarka">drukarek</a>,&nbsp;<a class="mw-redirect" title="Plik" href="https://pl.wikipedia.org/wiki/Plik">plik&oacute;w</a>, usług, itp.).</li>
+        <li><strong>Otwartość</strong>&nbsp;(ang.&nbsp;<em>openness</em>) &ndash; podatność na rozszerzenia, możliwość rozbudowy systemu zar&oacute;wno pod względem sprzętowym, jak i oprogramowania.</li>
+        <li><strong>Wsp&oacute;łbieżność</strong>&nbsp;(ang.&nbsp;<em>concurrency</em>) &ndash; zdolność do przetwarzania wielu zadań jednocześnie.</li>
+        <li><strong>Skalowalność</strong>&nbsp;(ang.&nbsp;<em>scalability</em>) &ndash; cecha systemu umożliwiająca zachowanie podobnej wydajności systemu przy zwiększaniu skali systemu (np. liczby&nbsp;<a title="Proces (informatyka)" href="https://pl.wikipedia.org/wiki/Proces_(informatyka)">proces&oacute;w</a>, komputer&oacute;w, itp.).</li>
+        <li><strong>Tolerowanie awarii</strong>&nbsp;(ang.&nbsp;<em>fault tolerance</em>) &ndash; właściwość systemu umożliwiająca działania systemu mimo pojawiania się błęd&oacute;w i (lub) uszkodzeń (np. przez utrzymywanie nadmiarowego sprzętu).</li>
+        <li><strong>Przezroczystość</strong>&nbsp;(ang.&nbsp;<em>transparency</em>) &ndash; właściwość systemu powodująca postrzeganie systemu przez użytkownika jako całości, a nie poszczeg&oacute;lnych składowych.</li>
+        </ol>
+        <p>Obecnie w systemach rozproszonych istotną rolę odgrywa&nbsp;<a class="new" title="Warstwa pośrednia (strona nie istnieje)" href="https://pl.wikipedia.org/w/index.php?title=Warstwa_po%C5%9Brednia&amp;action=edit&amp;redlink=1">oprogramowanie pośredniczące</a>&nbsp;(warstwa pośrednia, ang.&nbsp;<em>middleware</em>), kt&oacute;ra pośredniczy w komunikacji między jego składowymi. Przykładami warstwy pośredniej są:</p>
+        <ul>
+        <li><a class="new" title="Gniazdo (informatyka) (strona nie istnieje)" href="https://pl.wikipedia.org/w/index.php?title=Gniazdo_(informatyka)&amp;action=edit&amp;redlink=1">gniazda</a>&nbsp;(ang.&nbsp;<em>sockets</em>)</li>
+        <li><a class="mw-redirect" title="Remote Procedure Call" href="https://pl.wikipedia.org/wiki/Remote_Procedure_Call">RPC</a>&nbsp;(<em>Remote Procedure Call</em>)</li>
+        <li><a class="new" title="Distributed Computing Environment (strona nie istnieje)" href="https://pl.wikipedia.org/w/index.php?title=Distributed_Computing_Environment&amp;action=edit&amp;redlink=1">DCE</a>&nbsp;(<em>Distributed Computing Environment</em>)</li>
+        <li><a class="mw-redirect" title="CORBA" href="https://pl.wikipedia.org/wiki/CORBA">CORBA</a>&nbsp;(<em>Common Object Request Broker Architecture</em>)</li>
+        <li><a class="mw-redirect" title="DCOM" href="https://pl.wikipedia.org/wiki/DCOM">DCOM</a>&nbsp;(<em>Distributed Component Object Model</em>)</li>
+        <li><a class="mw-disambig" title="RMI" href="https://pl.wikipedia.org/wiki/RMI">RMI</a>&nbsp;(<em>Remote Method Invocation</em>)</li>
+        </ul>
+      </div>
+    </div>
+      <div id="footer">
+      Copyright &copy;Patryk Kirszenstein 
+    </div>
+  </div>
+</body>
+</html>

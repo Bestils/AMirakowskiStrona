@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Podstawy budowania systemów rozproszonych</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1>Podstawy budowania systemów rozproszonych</h1>
+          <h2>Proste rozwiązania trudnych problemów.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="przyklady.html">Przykłady</a></li>
+          <li><a href="page.html">Blog Posty</a></li>
+          <li><a href="grafiki.html">Grafiki i Schematy</a></li>
+          <li><a href="contact.html">Skontaktuj się z nami</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <h1 id="firstHeading" class="firstHeading" lang="pl">Blockchain</h1>
+      <p>&nbsp;</p>
+      <p><span class="mw-headline"><strong>Blockchain</strong>&nbsp;lub&nbsp;<strong>łańcuch blok&oacute;w</strong><sup id="cite_ref-1" class="reference"><a href="https://pl.wikipedia.org/wiki/Blockchain#cite_note-1">[1]</a></sup>&nbsp;(czasem też&nbsp;<strong>łańcuch blokowy</strong>) &ndash; zdecentralizowana i&nbsp;<a title="Rozproszona baza danych" href="https://pl.wikipedia.org/wiki/Rozproszona_baza_danych">rozproszona baza danych</a>&nbsp;w modelu&nbsp;<a title="Otwarte oprogramowanie" href="https://pl.wikipedia.org/wiki/Otwarte_oprogramowanie">open source</a>&nbsp;w sieci internetowej o architekturze&nbsp;<a title="Peer-to-peer" href="https://pl.wikipedia.org/wiki/Peer-to-peer">peer-to-peer</a>&nbsp;(P2P) bez centralnych komputer&oacute;w i niemająca scentralizowanego miejsca przechowywania danych, służąca do księgowania poszczeg&oacute;lnych&nbsp;<a title="Transakcja (finanse)" href="https://pl.wikipedia.org/wiki/Transakcja_(finanse)">transakcji</a>, płatności lub zapis&oacute;w księgowych<sup id="cite_ref-2" class="reference"><a href="https://pl.wikipedia.org/wiki/Blockchain#cite_note-2">[2]</a></sup>&nbsp;zakodowana za pomocą&nbsp;<a title="Szyfr" href="https://pl.wikipedia.org/wiki/Szyfr">algorytm&oacute;w kryptograficznych</a>. W istocie blockchain to swoisty zdecentralizowany i rozproszony rejestr transakcji lub m&oacute;wiąc inaczej jest to zdecentralizowana platforma transakcyjna w rozproszonej infrastrukturze sieciowej. Blockchain to publiczny i jawny rejestr do kt&oacute;rego dostęp może uzyskać każdy<sup id="cite_ref-3" class="reference"><a href="https://pl.wikipedia.org/wiki/Blockchain#cite_note-3">[3]</a></sup>.</span></p>
+      <h2><span id="Transakcje" class="mw-headline"><br />Transakcje</span></h2>
+      <p>Transakcje są&nbsp;<a title="Podpis cyfrowy" href="https://pl.wikipedia.org/wiki/Podpis_cyfrowy">podpisywane cyfrowo</a>&nbsp;za pomocą&nbsp;<a title="Kryptografia klucza publicznego" href="https://pl.wikipedia.org/wiki/Kryptografia_klucza_publicznego">kryptografii klucza publicznego</a>&nbsp;z użyciem&nbsp;<a title="Kryptografia krzywych eliptycznych" href="https://pl.wikipedia.org/wiki/Kryptografia_krzywych_eliptycznych">kryptografii krzywych eliptycznych</a>&nbsp;(ECDSA) i są jawne, choć użytkownicy są anonimowi. Transakcje mają charakter rozproszony, co oznacza, że nie są monitorowane przez gł&oacute;wnego pośrednika. Są przetwarzane przez komputery w sieci peer-to-peer, kt&oacute;ra nie weryfikuje transakcji poprzez wykorzystanie centralnych komputer&oacute;w<sup id="cite_ref-4" class="reference"><a href="https://pl.wikipedia.org/wiki/Blockchain#cite_note-4">[4]</a></sup>. Transakcje nazywane są węzłami i po potwierdzeniu poprawności, dodawane do replikowanego i znakowanego czasem dziennika transakcji, nazywanego blokiem<sup id="cite_ref-itwiz.pl_5-0" class="reference"><a href="https://pl.wikipedia.org/wiki/Blockchain#cite_note-itwiz.pl-5">[5]</a></sup>. Przetwarzanie transakcji nie jest bezpłatne<sup id="cite_ref-6" class="reference"><a href="https://pl.wikipedia.org/wiki/Blockchain#cite_note-6">[6]</a></sup>.</p>
+      <h2><span id="Bloki" class="mw-headline">Bloki</span></h2>
+      <p>Każdy blok danych zawiera określoną liczbę zapis&oacute;w z transakcjami. Rozmiar bloku uzależniony jest od konkretnej implementacji, oraz charakterystyki danej kryptowaluty<sup id="cite_ref-7" class="reference"><a href="https://pl.wikipedia.org/wiki/Blockchain#cite_note-7">[7]</a></sup>. Przykładowo wielkość bloku bitcoin może wynosić maksymalnie do wartości 1 MB, co wynika bezpośrednio ze specyfikacji protokołu bitcoin.</p>
+      <h2><span id="Zalety" class="mw-headline">Zalety</span></h2>
+      <ul>
+      <li>Technologia blockchain odporna jest na&nbsp;<a title="Wojna cybernetyczna" href="https://pl.wikipedia.org/wiki/Wojna_cybernetyczna">cyberataki</a><sup id="cite_ref-8" class="reference"><a href="https://pl.wikipedia.org/wiki/Blockchain#cite_note-8">[8]</a></sup>, ponieważ bezpieczeństwo jest zapewnione dzięki&nbsp;<a title="Kryptologia" href="https://pl.wikipedia.org/wiki/Kryptologia">kryptografii</a>,</li>
+      <li>Technologia blockchain oparta na zakodowanej strukturze kryptograficznej, nie potrzebuje żadnej instytucji pośredniczącej, weryfikującej dane z transakcji czy potwierdzającej jej uczestnik&oacute;w, dzięki czemu koszty jej działania są niepor&oacute;wnywalnie niższe z innymi systemami, a wydajność olbrzymia<sup id="cite_ref-9" class="reference"><a href="https://pl.wikipedia.org/wiki/Blockchain#cite_note-9">[9]</a></sup>,</li>
+      <li>Dzięki rozproszeniu i decentralizacji jest odporny na wszelkiego rodzaju awarie&nbsp;<a title="System informatyczny" href="https://pl.wikipedia.org/wiki/System_informatyczny">system&oacute;w informatycznych</a>,</li>
+      <li>Rejestr blockchain jest jawny, publiczny, anonimowy i nie podlega kontroli<sup id="cite_ref-10" class="reference"><a href="https://pl.wikipedia.org/wiki/Blockchain#cite_note-10">[10]</a></sup>,</li>
+      <li>Bezpieczeństwo,</li>
+      <li>Decentralizacja,</li>
+      <li><a title="Dezintermediacja" href="https://pl.wikipedia.org/wiki/Dezintermediacja">Dezintermediacja</a><sup id="cite_ref-11" class="reference"><a href="https://pl.wikipedia.org/wiki/Blockchain#cite_note-11">[11]</a></sup>,</li>
+      <li>Jawność,</li>
+      <li>Transparentność (przejrzystość),</li>
+      <li><a title="Anonimowość" href="https://pl.wikipedia.org/wiki/Anonimowo%C5%9B%C4%87">Anonimowość</a>,</li>
+      <li>Niezależność,</li>
+      <li>Uwierzytelnienie (autoryzacja).</li>
+      </ul>
+    </div>
+      <div id="footer">
+      Copyright &copy;Patryk Kirszenstein 
+    </div>
+  </div>
+</body>
+</html>
