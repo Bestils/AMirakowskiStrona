@@ -1,74 +1,64 @@
 
-function check()                                    
+function check(e)                                    
 { 
-    var name = document.forms["witamy"]["name"];               
+    e.preventDefault();
+    var name = document.forms["witamy"]["name"];         
+     var surname = document.forms["witamy"]["surname"];             
     var email = document.forms["witamy"]["email"];    
-    var phone = document.forms["witamy"]["Telephone"];  
-    var what =  document.forms["witamy"]["Subject"];  
-    var password = document.forms["witamy"]["Password"];  
-    var address = document.forms["witamy"]["Address"];  
-   
-    var namePattern= "/^(([A-Za-z]+[\-\']?)*([A-Za-z]+)?\s)+([A-Za-z]+[\-\']?)*([A-Za-z]+)?$/"
-    var surnamePattern= "/^(([A-Za-z]+[\-\']?)*([A-Za-z]+)?\s)+([A-Za-z]+[\-\']?)*([A-Za-z]+)?$/"
-    var passwordPattern= "/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/"
+    var city = document.forms["witamy"]["city"];  
+    var address = document.forms["witamy"]["address"];  
+    var zipcode = document.forms["witamy"]["zipcode"];  
+    
+    var namePattern= /^(([A-Za-z]+[\-\']?)*([A-Za-z]+)?\s)+([A-Za-z]+[\-\']?)*([A-Za-z]+)?$/;
+    var surnamePattern= /^(([A-Za-z]+[\-\']?)*([A-Za-z]+)?\s)+([A-Za-z]+[\-\']?)*([A-Za-z]+)?$/;
 //   (?=.*\d)          // should contain at least one digit
 //   (?=.*[a-z])       // should contain at least one lower case
 //   (?=.*[A-Z])       // should contain at least one upper case
 //   [a-zA-Z0-9]{8,}   // should contain at least 8 from the mentioned characters
-    var emailPattern= "/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;"
-    var namePattern= "/([A-Z][a-z])\w+"
-    var namePattern= "/([A-Z][a-z])\w+"
-    if (name.value == "")                                  
+    var emailPattern= /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+    if (!namePattern.test(name.value))                                  
     { 
         window.alert("Pole imie musi miec przynajmniej 3 znaki i nie moze zawierać znaków specialnych"); 
         name.focus(); 
         return false; 
     } 
+    if (!surnamePattern.test(surname.value))                                 
+    { 
+        window.alert("Pole nazwisko musi miec przynajmniej 2 znaki i nie moze zawierać znaków specialnych"); 
+        surname.focus(); 
+        return false; 
+    } 
    
     if (address.value == "")                               
     { 
-        window.alert("Please enter your address."); 
+        window.alert("Pole Adress nie może być puste"); 
         address.focus(); 
         return false; 
     } 
        
-    if (email.value == "")                                   
+    if (!emailPattern.test(email.value))                                
     { 
-        window.alert("Please enter a valid e-mail address."); 
+        window.alert("Proszę wprowadzić poprawny email np. 'a@mir.pl'"); 
         email.focus(); 
         return false; 
     } 
    
-    if (phone.value == "")                           
+    if (zipcode.value == "")                           
     { 
-        window.alert("Please enter your telephone number."); 
-        phone.focus(); 
+        window.alert("Pole Kodu Pocztowego nie może być puste"); 
+        zipcode.focus(); 
         return false; 
     } 
    
-    if (password.value == "")                        
+    if (city.value == "")                        
     { 
-        window.alert("Please enter your password"); 
-        password.focus(); 
+        window.alert("Pole Miasto nie może być puste"); 
+        city.focus(); 
         return false; 
     } 
    
-    if (what.selectedIndex < 1)                  
-    { 
-        alert("Please enter your course."); 
-        what.focus(); 
-        return false; 
-    } 
    
     return true; 
 };
 
-const email = document.getElementById("email");
-
-email.addEventListener("input", function (event) {
-  if (email.validity.typeMismatch) {
-    email.setCustomValidity("I am expecting an e-mail address!");
-  } else {
-    email.setCustomValidity("");
-  }
-});

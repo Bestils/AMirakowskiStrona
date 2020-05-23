@@ -36,11 +36,11 @@
         <!-- insert the page content here -->
         <h1>Kontakt z nami</h1>
         <p>Jeżeli potrzebujesz wiecej informacji:</p>
-        <form action="#" method="post"  name="witamy" onsubmit="return check()">
+        <form action="#" method="post"  name="witamy" onsubmit="check(event)">
           <div class="form_settings">
-            <p><span>Imie</span><input class="contact" type="text" name="name" value="" /></p>
+            <p><span>Imie</span><input class="contact" id="name" type="text" name="name" value="" /></p>
             <p><span>Nazwisko</span><input class="contact" type="text" name="surname" value="" /></p>
-            <p><span>Email</span>  <input type="email" id="mail" name="mail"></p>
+            <p><span>Email</span>  <input type="email" id="mail" name="email"></p>
             <p><span>Miasto</span><input class="contact" type="text" name="city" value="" /></p>
             <p><span>Kod pocztowy</span><input class="contact" type="text" name="zipcode" value="" /></p>
             <p><span>Ulica wraz z numerem domu/mieszkania
